@@ -1,0 +1,100 @@
+/* ================== فونت ================== */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;600&display=swap");
+
+/* ================== تنظیمات پایه ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+/* ================== بدنه ================== */
+body {
+  height: 100vh;
+  background-color: #1e1e1e; /* پس‌زمینه دارک */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================== دکمه ================== */
+#openBtn {
+  border: none;
+  padding: 12px 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #6200ea;
+  color: #fff;
+  transition: 0.3s;
+}
+#openBtn:hover {
+  background-color: #3700b3;
+}
+
+/* ================== مدال ================== */
+.modal-container {
+  display: none; /* در ابتدا پنهان است */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* پس‌زمینه نیمه شفاف */
+  z-index: 1000;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 400px;
+  background-color: #2c2c2c; /* پس‌زمینه دارک مدال */
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  animation: animatetop 0.5s;
+}
+
+/* ================== هدر مدال ================== */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6200ea;
+  padding: 12px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.modal-header h2 {
+  font-size: 20px;
+}
+.modal-header .closeBtn {
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modal-header .closeBtn:hover {
+  color: #ff5252;
+}
+
+/* ================== بدنه مدال ================== */
+.modal-body {
+  padding: 15px 20px;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+/* ================== انیمیشن مدال ================== */
+@keyframes animatetop {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,88 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffc0cb, #ffb6c1);
+}
+
+/* Main Card */
+.container {
+  width: 420px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header */
+.info h1 {
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.info p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Form */
+form {
+  margin: 20px 0;
+}
+
+form input,
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+}
+
+form input {
+  border: 1px solid #ddd;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #e91e63;
+}
+
+form button {
+  background-color: #e91e63;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #d81b60;
+}
+
+/* QR Code Box */
+.qr-code {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px dashed #e91e63;
+  border-radius: 10px;
+}
+
+.qr-code img {
+  width: 150px;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}

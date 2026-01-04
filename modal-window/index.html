@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modal Dark Theme</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- دکمه باز کردن مدال -->
+  <button id="openBtn">کلیک برای مدال</button>
+
+  <!-- مدال -->
+  <div class="modal-container">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>عنوان مدال</h2>
+        <i class="fa-solid fa-xmark closeBtn"></i>
+      </div>
+      <div class="modal-body">
+        مدال یک پنجره موقت است که روی محتوای اصلی صفحه نمایش داده می‌شود و
+        برای جلب توجه کاربر به پیام‌ها، هشدارها یا اطلاعات مهم استفاده می‌شود.
+        تا زمانی که مدال بسته نشود، تعامل با صفحه اصلی متوقف می‌ماند.
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

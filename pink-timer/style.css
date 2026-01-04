@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #2b0f1f, #0f0a0d);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffb6c1;
+}
+
+/* باکس اصلی تایمر */
+.min-box {
+  background: rgba(255, 182, 193, 0.15);
+  backdrop-filter: blur(10px);
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.3);
+}
+
+/* هر آیتم */
+.box-item {
+  text-align: center;
+}
+
+.box-title {
+  font-size: 0.9rem;
+  color: #ffc0cb;
+  margin-bottom: 8px;
+}
+
+.box-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff69b4;
+}
+
+/* پیام پایان */
+.finished {
+  font-size: 1.3rem;
+  color: #ff69b4;
+}
