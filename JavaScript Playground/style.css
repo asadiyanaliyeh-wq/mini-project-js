@@ -1,0 +1,120 @@
+:root {
+    --neon-pink: #ff00aa;
+    --neon-glow: #ff00aa;
+    --dark-bg: #0f0f1a;
+    --card-bg: #1a1a2e;
+    --text-light: #e0e0ff;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    min-height: 100vh;
+}
+
+.header-neon {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.header-neon::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at center, rgba(255,0,170,0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.neon-glow {
+    color: white;
+    text-shadow: 
+        0 0 10px var(--neon-glow),
+        0 0 20px var(--neon-glow),
+        0 0 40px var(--neon-glow),
+        0 0 80px var(--neon-glow);
+    animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+    from { text-shadow: 0 0 10px var(--neon-glow), 0 0 20px var(--neon-glow), 0 0 30px var(--neon-glow); }
+    to { text-shadow: 0 0 20px var(--neon-glow), 0 0 40px var(--neon-glow), 0 0 60px var(--neon-glow), 0 0 100px var(--neon-glow); }
+}
+
+.neon-line {
+    width: 200px;
+    height: 4px;
+    background: var(--neon-pink);
+    box-shadow: 0 0 15px var(--neon-pink);
+    border-radius: 2px;
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    border: 1px solid rgba(255, 0, 170, 0.3);
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 0, 170, 0.3);
+    border-color: var(--neon-pink);
+}
+
+.text-neon {
+    color: var(--neon-pink) !important;
+}
+
+.card-title {
+    color: white !important;
+    font-size: 1.25rem;
+}
+
+.btn-demo {
+    background: transparent;
+    border: 2px solid var(--neon-pink);
+    color: var(--neon-pink);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-demo:hover {
+    background: var(--neon-pink);
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 0, 170, 0.6);
+}
+
+.btn-copy {
+    background: transparent;
+    border: 2px solid #00d4ff;
+    color: #00d4ff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-copy:hover {
+    background: #00d4ff;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+}
+
+.btn-success {
+    background: #28a745 !important;
+    border-color: #28a745;
+}
+
+.col-lg-2dot4 {
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+@media (max-width: 1199px) {
+    .col-lg-2dot4 { width: 33.333%; }
+}
+
+@media (max-width: 767px) {
+    .col-lg-2dot4 { width: 100%; }
+    .btn-demo, .btn-copy { width: 100%; margin-bottom: 8px; }
+}
