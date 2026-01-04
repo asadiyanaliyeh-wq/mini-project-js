@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اعتبار سنجی فرم</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" class="form" id="form">
+        <h2>فرم ثبت نام</h2>
+        <div class="form-control">
+          <label for="username">نام کاربری</label>
+          <input
+            type="text"
+            id="username"
+            data-name="نام کاربری"
+            placeholder="نام کابری خود را وارد کنید"
+          />
+          <small>پیام خطا</small>
+        </div>
+        <div class="form-control">
+          <label for="email">ایمیل</label>
+          <input
+            type="text"
+            id="email"
+            data-name="ایمیل"
+            placeholder="ایمیل خود را وارد کنید"
+          />
+          <small>پیام خطا</small>
+        </div>
+        <div class="form-control">
+          <label for="password">گذرواژه </label>
+          <input
+            type="password"
+            id="password"
+            data-name="گذرواژه"
+            placeholder="گذرواژه خود را وارد کنید"
+          />
+          <small>پیام خطا</small>
+        </div>
+        <div class="form-control">
+          <label for="password2">تایید گذرواژه </label>
+          <input
+            type="password"
+            id="password2"
+            data-name="تایید گذرواژه"
+            placeholder=" گذرواژه خود را دوباره وارد کنید"
+          />
+          <small>پیام خطا</small>
+        </div>
+        <button type="submit">ثبت</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
